@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src='jquery-2.1.1.min.js'></script>
+<script src='jquery.cookie.js'></script>
+<script src='blog_manage.js'></script>
+<title>ブログメンテナンス</title>
+</head>
+<body>
+	<div id='head_content'>
+		<h1>ブログメンテナンス</h1>
+	</div>
+	<div id='main_content'>
+		<h2>ブログ一覧</h2><br />
+		<table class='blog_contentTable' border='1'>
+			<tr>
+				<th></th>
+				<th>ブログID</th>
+				<th>ブログ登録日</th>
+				<th>ブログタイトル</th>
+				<th>ブログコンテンツ</th>
+			</tr>
+			<tbody class='blog_contentBody'>
+				<tr>
+					<td style='10%'>
+						<input type='button' id='blog_updateBtn' onclick='blog_update()' value='編集' /><br />
+						<input type='button' id='blog_deleteBtn' onclick='blog_delete()' value='削除' /><br />
+						<input type='button' id='blog_readBtn' onclick='blog_read()' value='一時表示' /><br />
+					</td>
+					<td style='15%'><label class='blog_id'></label></td>
+					<td style='15%'><label class='blog_date'></label></td>
+					<td style='30%'><label class='blog_title'></label></td>
+					<td style='35%'><label class='blog_content'></label></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

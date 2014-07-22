@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src='jquery-2.1.1.min.js'></script>
+<script src='user_registration.js'></script>
+<title>ユーザ登録</title>
+</head>
+<body>
+	<div id='head_content'>
+		<h1>ユーザ登録</h1>
+	</div>
+	<div id='main_content'>
+		<h2>ID</h2><br />
+		<input type='text' id='regist_id' value='' /><br />
+		<h2>ユーザ名</h2><br />
+		<input type='text' id='regist_user' value='' /><br />
+		<h2>パスワード</h2>
+		<input type='password' id='regist_pass1' value='' /><br />
+		<h3>もう一度入力して下さい</h3><br />
+		<input type='password' id='regist_pass2' value='' />
+	</div>
+	<div id='tail_content'>
+		<input type='button' id='regist_execBtn' onclick='regist_exec()' value='登録' />
+		<input type='button' id='regist_canceBtn' onclick='regist_cancel()' value='キャンセル' />
+		<input type='button' id='regist_clearBtn' onclick='regist_clear()' value='クリア' />
+	</div>
+</body>
+</html>

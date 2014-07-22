@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src='jquery-2.1.1.min.js'></script>
+<script src='pass_remained.js'></script>
+<title>パスワード変更</title>
+</head>
+<body>
+	<div id='head_content'>
+		<h1>パスワード変更</h1>
+	</div>
+	<div id='main_content'>
+		<h2>ID</h2><br />
+		<input type='text' id='update_id' value='' /><br />
+		<h2>パスワード</h2><br />
+		<input type='password' id='update_pass1' value='' /><br />
+		<h3>もう一度入力して下さい</h3><br />
+		<input type='password' id='update_pass2' value='' /><br />
+	</div>
+	<div id='tail_content'>
+		<input type='button' id='update_execBtn' onclick='update_exec()' value='登録' />
+		<input type='button' id='update_clearBtn' onclick='update_clear()' value='クリア' />
+		<input type='button' id='update_closeBtn' onclick='update_close()' value='閉じる' />
+	</div>
+</body>
+</html>

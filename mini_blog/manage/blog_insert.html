@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src='jquery-2.1.1.min.js'></script>
+	<script src='jquery.cookie.js'></script>
+	<script src="blog_insert.js"></script>
+	<title>ブログ入力</title>
+</head>
+<body>
+	<div id='head_content'>
+		<h1>ブログ入力</h1>
+	</div>
+	<div id='main_content'>
+		<h2>日付</h2><br />
+		<label id='blog_YMD'></label><br />
+		<div id='blog_title_content'>
+			<h2>ブログタイトル</h2><br />
+			<input type="text" id='blog_title' value='' />
+			<input type='hidden' id='blog_id' value='' />
+		</div>
+		<div id='blog_content'>
+			<h2>本文</h2>
+			<textarea id='blog_contents' value=''>
+				
+			</textarea>
+		</div>
+	</div>
+	<div id='tail_content'>
+		<input type='button' id='blog_insertBtn' onclick='blog_insert()' value='登録' />
+		<input type='button' id='blog_cancelBtn' onclick='blog_cancel()' value='クリア' />
+		<input type='button' id='blog_closeBtn' onclick='blog_insert_close()' value='閉じる' />
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src='jquery-2.1.1.min.js'></script>
+<script src='timeline.js'></script>
+<title>タイムライン</title>
+</head>
+<body>
+	<div id='head_content'>
+		<h1>タイムライン</h1>
+	</div>
+	<div id='main_content'>
+		<table class='timeline'>
+			<tr>
+				<td>
+					<label>ブログタイトル</label><br />
+					<input type='text' class='blog_title' value='' style='border:none' readonly="readonly" /><br />
+					<input type='hidden' class='blog_id' value='' /><br />
+					<label>ブログコンテンツ</label><br />
+					<textarea class='blog_content' style='border:none' rows=10 readonly="readonly">
+						
+					</textarea><br />
+					作成者:<label class='name'></label>&nbsp;&nbsp;作成日:<label class='date'></label>
+					<a href='blog_read.html' onclick='timeline_read()'>続きを読む</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id='tail_content' style='margin-top:5px'>
+		<a href='./manage/user_registration.html'>ユーザ作成</a><br />
+		<a href='./manage/index.html'>管理画面ログイン</a>
+	</div>
+	<div id='license_content' style='margin-top:10px'>
+		<a href='mini_blog.zip'>全ソース</a><br />
+		<label>このアプリはMITライセンスで公開しております。改変時はhiro.matsuno at gmail.comにご連絡下さい。atは書き換えてくださいね。</label><br />
+		<a href='http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license'>MITライセンスの全文（日本語訳）</a>
+	</div>
+</body>
+</html>

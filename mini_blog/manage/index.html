@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='jquery-2.1.1.min.js'></script>
+<script src='index.js'></script>
+<meta charset="UTF-8">
+<title>ミニブログログイン</title>
+</head>
+<body>
+	<div id='head_content'>
+		<h1>ログイン画面</h1>
+	</div>
+	<div id='main_content'>
+		<h2>ID</h2><br />
+		<input type='text' id='id' value='' /><br />
+		<h2>パスワード</h2><br />
+		<input type='password' id='pass' value='' /><br />
+	</div>
+	<div id='tail_content'>
+		<input type='button' id='loginBtn' onclick='login()' value='ログイン' />
+		<input type='button' id='cancelBtn' onclick='cancel()' value='キャンセル' />
+	</div>
+</body>
+</html>

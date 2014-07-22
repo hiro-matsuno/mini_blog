@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src='jquery-2.1.1.min.js'></script>
+<script src='blog_read.js'></script>
+<title>ブログ閲覧</title>
+</head>
+<body>
+	<div id='main_content'>
+		<div id='blog_title_content'>
+			
+			<input type='hidden' id='blog_id' value='' />
+			<h2>ブログタイトル</h2><br />
+			<input type="text" id='blog_title' value='' readonly="readonly" />
+		</div>
+		<div id='blog_content'>
+			<h2>本文</h2>
+			<textarea id='blog_contents' readonly="readonly">
+				
+			</textarea><br />
+			作成者:<label id='id'></label>&nbsp;&nbsp;作成日:<label id='blog_date'></label>
+		</div>
+	</div>
+	<div id='tail_content'>
+		<input type='button' id='blog_closeBtn' onclick='blog_read_close()' value='閉じる' />
+	</div>
+</body>
+</html>
